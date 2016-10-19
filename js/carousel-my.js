@@ -15,7 +15,7 @@
             maximumOffset = 0;
         
         /** click on right button*/
-        leftUIEl.click(function () {
+        leftUIEl.on('click',function () {
             if (currentLeftValue != maximumOffset) {
                 currentLeftValue += 275;
                 elementsList.animate({left: currentLeftValue + "px"}, 500);
@@ -23,7 +23,7 @@
         });
         
         /** click on left button*/
-        rightUIEl.click(function () {
+        rightUIEl.on('click',function () {
             if (currentLeftValue != minimumOffset) {
                 currentLeftValue -= 275;
                 elementsList.animate({left: currentLeftValue + "px"}, 500);
